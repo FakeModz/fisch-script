@@ -1,5 +1,5 @@
 local HttpService = game:GetService("HttpService")
-local Url = "https://raw.githubusercontent.com/centerepic/sasware/refs/heads/main/index.json"
+local Url = "https://raw.githubusercontent.com/FakeModz/fisch-script/refs/heads/main/Main2/index.json"
 
 local Success, Response = pcall(function()
     return game:HttpGet(Url)
