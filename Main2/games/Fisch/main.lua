@@ -34,7 +34,7 @@ local Success, Error = pcall(function()
 	-- 												  it's scuffed but works on literally any exec
 
 	local Toasts = loadstring(
-		game:HttpGet("https://raw.githubusercontent.com/centerepic/sasware-fisch/refs/heads/main/toasts.lua")
+		game:HttpGet("https://raw.githubusercontent.com/FakeModz/fisch-script/refs/heads/main/Main1/toasts.lua")
 	)()
 
 	local function InteractiveToast() : ScreenGui | ImageButton | ImageButton
