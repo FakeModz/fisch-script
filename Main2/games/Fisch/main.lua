@@ -11,10 +11,10 @@ local Success, Error = pcall(function()
 	Start = os.clock()
 	local NO_HOOKING = false
 
-	local Version = 1.3
-	local SubVersion = "beta"
+	local Version = 1
+	local SubVersion = "BETA"
 	local Debugging = true
-	local Title = "Sasware"
+	local Title = "PANJUL HUB"
 
 	local HttpService = game:GetService("HttpService")
 	local Players = game:GetService("Players")
@@ -684,13 +684,13 @@ local Success, Error = pcall(function()
 		SellAll = ReplicatedStorage.events:WaitForChild("SellAll"),
 		Power = EnsureStream(
 			workspace,
-			{ "world", "npcs", "Merlin", "Merlin", "power" },
+			{ "World", "npcs", "Merlin", "Merlin", "Power" },
 			Vector3.new(-930, 226, -993),
 			5
 		),
 		Luck = EnsureStream(
 			workspace,
-			{ "world", "npcs", "Merlin", "Merlin", "luck" },
+			{ "World", "NPC", "Merlin", "Merlin", "Luck" },
 			Vector3.new(-930, 226, -993),
 			5
 		),
@@ -722,8 +722,8 @@ local Success, Error = pcall(function()
 
 	local Interface = {
 		FishRadar = ReplicatedStorage.resources.items.items["Fish Radar"]["Fish Radar"],
-		TeleportSpots = WaitForTable(workspace, { "world", "spawns", "TpSpots" }),
-		Inventory = WaitForTable(LocalPlayer.PlayerGui, { "hud", "safezone", "backpack" }),
+		TeleportSpots = WaitForTable(workspace, { "World", "Spawns", "Spots" }),
+		Inventory = WaitForTable(LocalPlayer.PlayerGui, { "Hud", "Safezone", "Backpack" }),
 		MeteorItems = workspace:WaitForChild("active"):WaitForChild("meteorItems"),
 		PlayerData = workspace:WaitForChild("PlayerStats"):WaitForChild(LocalPlayer.Name):WaitForChild("T"):GetChildren()[1],
 		NPCs = workspace:WaitForChild("world"):WaitForChild("npcs"),
